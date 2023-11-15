@@ -1,0 +1,43 @@
+header {
+    padding: 20px 0;
+    .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo {
+        @include font(16px,700);
+        text-transform: uppercase;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        .ellipse.active {
+            width: 5px;
+            height: 5px;
+            background-color: $orange;
+            border-radius: 100%;
+            
+        }
+    }
+    .navigate {
+        display: flex;
+        align-items: center;
+        .nav-svg {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            &:first-child {
+                margin:0  20px ;
+            }
+        }
+        .nav-links {
+            padding: 10px 0;
+            border-right: 1px solid $bgc;
+        a {
+            text-transform: uppercase;
+            margin-right: 20px;
+        }   
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.main {
+    background-color: $orange;
+    padding-top: 30%;
+    position: relative;
+    color: $white;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .info {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 50px;
+            }
+            .btn {
+            width: 50%;
+            background-color:$white;
+            color: black;
+            padding: 11px 17px;
+            border-radius: 13px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+            &:hover {
+                color: $white;
+                background-color: black;
+            }
+                cursor: pointer;
+                transition: 0.4s;
+            }
+        }
+        .pic {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            .main-img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+    &-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper {
+        height: 100%;
+        
+    }
+}
